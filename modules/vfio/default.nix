@@ -54,7 +54,7 @@ in {
       ]);
 
     boot.initrd.kernelModules =
-      [ "vfio_virqfd" "vfio_pci" "vfio_iommu_type1" "vfio" ];
+      [ "vfio_pci" "vfio_iommu_type1" "vfio" ];
     boot.blacklistedKernelModules =
       optionals cfg.blacklistNvidia [ "nvidia" "nouveau" ];
   };
